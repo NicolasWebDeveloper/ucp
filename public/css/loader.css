@@ -1,0 +1,27 @@
+.container__loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.loader {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.4rem solid rgba(255, 255, 255, 0.507);
+  border-left-color: #2d53c4;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('/fonts/Rajdhani.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rajdhani';
+}
+
+body {
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(#1e2836 0%, #1f2a37 20%, #202a36 40%, #1c2631 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 15rem;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 15rem;
+  height: 2.5rem;
+  margin: 0.2rem;
+  display: block;
+  background-color: #5d6170;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.button {
+  border: none;
+  border-radius: 0.2rem;
+  width: 7rem;
+  height: 2.4rem;
+  background-color: #3b9c74;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 0.5rem;
+  transition: all linear 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.01);
+}
+
+::placeholder {
+  color: #1e1f34;
+}
+
+.container__btn {
+  width: 15rem;
+  display: flex;
+}
+
+.container__error {
+  width: 15rem;
+}
+
+.error {
+  margin: 0;
+  color: rgb(180, 64, 64);
+  font-weight: 700;
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,19 @@
+doctype html
+html(lang="de")
+    head
+        title UCP - Login
+        link(rel="stylesheet", href="./css/main.css")
+        link(rel="stylesheet", href="./css/loader.css")
+        script(src="./js/login.js" defer) 
+    body 
+        .container__loader.hidden
+            .loader
+        .container
+            h1.title UCP - Login
+            form.form(method="POST")
+                input.input.name(name="name" placeholder="Name")
+                input.input.password(name="name" placeholder="Password")
+                .container__error.hidden
+                    p.error
+                .container__btn
+                    button.button(type="submit") Login
