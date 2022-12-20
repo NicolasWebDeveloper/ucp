@@ -76,12 +76,6 @@ body {
   width: 15rem;
 }
 
-.error {
-  margin: 0;
-  color: rgb(180, 64, 64);
-  font-weight: 700;
-}
-
 .hidden {
   visibility: hidden;
 }
