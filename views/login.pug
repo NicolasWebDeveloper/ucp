@@ -4,6 +4,8 @@ html(lang="de")
         title UCP - Login
         link(rel="stylesheet", href="./css/main.css")
         link(rel="stylesheet", href="./css/loader.css")
+        link(rel="stylesheet", href="./css/notification.css")
+        link(rel="shortcut icon", href="./img/favicon.ico", type="image/x-icon")
         script(src="./js/login.js" defer) 
     body 
         .container__loader.hidden
@@ -12,7 +14,7 @@ html(lang="de")
             h1.title UCP - Login
             form.form(method="POST")
                 input.input.name(name="name" placeholder="Name")
-                input.input.password(name="name" placeholder="Password")
+                input.input.password(name="name" type="password" placeholder="Password")
                 .container__error.hidden
                     p.error
                 .container__btn
