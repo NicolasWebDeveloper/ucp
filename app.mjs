@@ -5,9 +5,12 @@ import authRoute from './routes/authRoute.mjs';
 
 import errorController from './controllers/errorController.mjs';
 
+import inputSanitize from './middleware/inputSanitize.mjs';
+
 const app = express();
 app.use(express.static('public'));
 app.use(express.json());
+app.use(inputSanitize);
 
 app.set('view engine', 'pug');
 app.use('/', viewRoute);
