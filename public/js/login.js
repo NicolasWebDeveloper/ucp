@@ -50,7 +50,9 @@ const loginUser = async (name, password) => {
       },
       body: JSON.stringify({ name, password })
     });
-    if (!res.ok) throw new Error(res.statusText);
+    const data = await res.json();
+    console.log(data);
+    if (!res.ok) throw new Error(data.message);
     notify('success', 'Welcome back!');
   } catch (err) {
     loader.classList.add('hidden');

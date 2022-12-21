@@ -1,3 +1,5 @@
+
 # UCP
 
-Simple User Control Panel
+A simple control panel for gameservers
+
