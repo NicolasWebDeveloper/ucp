@@ -1,4 +1,6 @@
 import express from 'express';
+import helmet from 'helmet';
+import morgan from 'morgan';
 
 import viewRoute from './routes/viewRoute.mjs';
 import authRoute from './routes/authRoute.mjs';
@@ -10,6 +12,8 @@ import inputSanitize from './middleware/inputSanitize.mjs';
 const app = express();
 app.use(express.static('public'));
 app.use(express.json());
+app.use(helmet());
+app.use(morgan('dev'));
 app.use(inputSanitize);
 
 app.set('view engine', 'pug');
